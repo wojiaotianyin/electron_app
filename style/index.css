@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body .side_selector {
+  background: red;
+  width: 30%;
+}
+
+body #changable_border {
+  width: 1px;
+  background: #000;
+  cursor: ew-resize;
+}
+
+body .main_area {
+  width: 70%;
+  background: pink;
+}
+/*# sourceMappingURL=index.css.map */

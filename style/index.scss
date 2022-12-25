@@ -1,0 +1,18 @@
+body {
+    margin:0;
+    display: flex;
+    width: 100%;
+    .side_selector {
+        background: red;
+        width: 30%;
+    }
+    #changable_border {
+        width:1px;
+        background: #000;
+        cursor: ew-resize;
+    }
+    .main_area {
+        width: 70%;
+        background: pink;
+    }
+}
