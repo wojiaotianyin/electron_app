@@ -7,18 +7,33 @@ body {
 }
 
 body .side_selector {
-  background: red;
-  width: 30%;
+  position: relative;
+  background: #ff7676;
+  min-width: 30%;
 }
 
-body #changable_border {
-  width: 1px;
+body .side_selector::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3px;
+  height: -webkit-fill-available;
   background: #000;
+  display: block;
   cursor: ew-resize;
 }
 
+body #border {
+  position: absolute;
+  width: 10px;
+  background: #ff1616;
+  height: 100px;
+  z-index: 10;
+}
+
 body .main_area {
-  width: 70%;
+  min-width: 70%;
   background: pink;
 }
 /*# sourceMappingURL=index.css.map */

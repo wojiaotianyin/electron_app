@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';" />
+
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="style/index.css" />
     <link
       rel="stylesheet"
@@ -15,14 +13,17 @@
     <title>Fake Slack</title>
   </head>
   <body>
-    <section class="side_selector">
+    <section class="side_selector" id="changable_border">
       this is side
-      <h1>Hello World!</h1>
+      <!-- <h1>Hello World!</h1>
       We are using Node.js <span id="node-version"></span>, Chromium
       <span id="chrome-version"></span>, and Electron
-      <span id="electron-version"></span>
+      <span id="electron-version"></span> -->
     </section>
-    <div id="changable_border"></div>
+    <div id="border"></div>
     <section class="main_area">this is main</section>
+    <!-- <input type="text" id="input1" size="30">
+    <button type="button" id="button1">submit</button> -->
+    <script type="text/javascript" src="./lib.js"></script>
   </body>
 </html>

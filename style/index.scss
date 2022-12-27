@@ -1,18 +1,32 @@
 body {
-    margin:0;
-    display: flex;
-    width: 100%;
-    .side_selector {
-        background: red;
-        width: 30%;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  .side_selector {
+    position: relative;
+    background: rgb(255, 118, 118);
+    min-width: 30%;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 3px;
+      height: -webkit-fill-available;
+      background: #000;
+      display: block;
+      cursor: ew-resize;
     }
-    #changable_border {
-        width:1px;
-        background: #000;
-        cursor: ew-resize;
-    }
-    .main_area {
-        width: 70%;
-        background: pink;
-    }
+  }
+  #border {
+    position: absolute;
+    width:10px;
+    background: rgb(255, 22, 22);
+    height: 100px;
+    z-index: 10;
+  }
+  .main_area {
+    min-width: 70%;
+    background: pink;
+  }
 }
